@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="Images/freshmart.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+     <style>
+        #head img{
+    width: 170px;
+    margin-left: 7%;
+    height: 90px;
+    margin-top: 1%;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+
+</style>
+
+ 
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to Top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+     <div id="bodyyy">
+        <div id="head">
+           <a href="index.html"><img src="Images/Freshmart_Logo.png"></a>
+        </div>
+        <div><br>
+        <nav class="navbar navbar-expand-sm bg-success navbar-dark container-fluid">
+            <!--<a href="#">Categories</a>-->
+            <a class="navbar-brand" href="index.html"><i class="fa fa-home"></i> Home</a>
+            <div id="stat1">
+        <a class="navbar-brand" href="statistics.html"><i class="fa fa-line-chart"></i> Statistics</a>
+    </div>
+            <ul class="navbar-nav ml-auto">
+          <a class="navbar-brand" href="signup.html"><i class="fa fa-user-plus"></i> Sign Up</a>
+          <a class="navbar-brand" href="login.html"><i class="fa fa-sign-in"></i> Login</a>
+        </ul>
+    </nav>
+</div><br><br>
+      <div class="box">
+        <div class="row">
+          <div class="col-sm-5 col-xs-1 box1">
+            <div class="inline-text">
+              <h1>Looks like you are new here!</h1>
+              <p>
+                Signup to get started!!
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-1 box2">
+            <form>
+            <div class="user-id user-data">
+              <input type="email" required>
+              <label>Enter Email</label>
+            </div>
+             <div class="user-id user-data">
+              <input type="text" pattern="[0-9]{10}" maxlength="10" required>
+              <label>Mobile Number</label>
+            </div>
+
+             <div class="user-id user-data">
+              <input type="text" required>
+              <label>Enter Full Name</label>
+            </div>
+
+            <div class="user-id user-data">
+              <input type="password" required>
+              <label>Enter Password</label>
+              
+            </div>
+            
+            <div class="user-id button btn btn-success btn-block">
+              <a href="index.html"><input type="submit" value="Sign Up" /></a>
+          </form>
+            </div>
+            <div class="user-id">
+        
+        </div>
+            <div class="user-id button">
+              <a href="login.html"><input type="reset" value="Existing User? Login" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id="products"></div>
+        <div id="footer">
+            <div id="footer1">
+                <div class="inside_footer1">
+                    <span>Freshmart</span>
+                    <ul type="none">
+                        <li>About Us</li>
+                        <li>In News</li>
+                        <li>Green Basket</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms and Conditions</li>
+                        <li>Careers At Freshmart</li>
+                        <li>Freshmart Instant</li>
+                    </ul>
+                </div>
+                <div class="inside_footer1">
+                    <span>Help</span>
+                    <ul type="none">
+                        <li>FAQs</li>
+                        <li>Contact Us</li>
+                        <li>Freshmart Wallet FAQs</li>
+                        <li>Freshmart Wallet T&Cs</li>
+                        <li>Vendor Connect</li>
+                        <li>E-Invoice Compliance for Freshmart vendors</li>
+                    </ul>
+                </div>
+                <div class="inside_footer1">
+                    <span>Download Our App</span>
+                    <ul type="none">
+
+                        <img width="50%" src="Images/both.png">
+                    </ul>
+                </div>
+                <div class="inside_footer1">
+                    <span>Get Social With Us</span>
+                    <img width="170vw" src="Images/sociall.png">
+                </div>
+            </div><br><br>
+            <hr color="lightgrey">
+            <div id="footer2">
+
+
+                <p><span>POPULAR CATEGORIES:</span>&nbsp &nbsp Sunflower Oils, Wheat Atta, Ghee, Milk, Health Drinks,
+                    Flakes, Organic F&V, Namkeen, Eggs, Floor Cleaners, Other Juices, Leafy Vegetables, Frozen Veg Food,
+                    Diapers & Wipes</p>
+                <p><span>POPULAR BRANDS:</span>&nbsp &nbsp Fresho, Freshmart Royal, Nandini, Kelloggs, 24 Mantra, Saffola,
+                    Lizol,
+                    Safal, Horlicks, MTR, Fresho Meats, Whisper , Real, Milky Mist, Nivea, Himalaya, Comfort, Sunpure ,
+                    Bru
+                    , Zespri,</p>
+                <p><span>CITIES WE SERVE:</span>&nbsp &nbsp
+                    Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Mysore, Madurai, Coimbatore, Vijayawada-Guntur,
+                    Kolkata, Ahmedabad-Gandhinagar, Nashik, Lucknow-Kanpur, Gurgaon, Vadodara, Visakhapatnam, Surat,
+                    Nagpur,
+                    Patna, Indore, Chandigarh Tricity, Jaipur, Bhopal, Noida-Ghaziabad, Kochi, </p>
+                <p><span>PAYMENT OPTIONS:</span>&nbsp &nbsp
+                    <img width="100vw" src="Images/cod.jpg">
+                    <img width="100vw" src="Images/visa.png">
+                    <img width="100vw" src="Images/mastercard.png">
+                    <img width="100vw" src="Images/paytm.png">
+                    <img width="100vw" src="Images/mobi.png">
+                    <img width="100vw" src="Images/rupay.png">
+                    <img width="100vw" src="Images/american.png">
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+
+       <script>
+
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+  </body>
+</html>

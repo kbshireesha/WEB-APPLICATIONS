@@ -1,0 +1,229 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Cart</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="Images/freshmart.png">
+    <style>
+        #lnk {
+            color: black;
+            text-decoration: none;
+        }
+
+        #prodN {
+            margin: 5% 15% 0% 15%;
+            height: 24px;
+            width: 70%;
+            /* background-color: red; */
+            font-size: larger;
+            font-weight: bold;
+        }
+
+         .leftPrice {
+            float: right;
+            margin-top: -2%;
+            margin-right: 5%;
+        }
+
+        #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+</style>
+
+    </head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to Top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+    <div id="heading">
+        <a href="index.html"><img src="Images/Freshmart_Logo.png"></a>
+        <div id="heading_main2">
+            <input type="search" id="search_bar" placeholder="Search for Products..">
+            <img id="search_img" src="Images/Search_image.png">
+            <a href="cart.html" id="lnk">
+                <div id="my_basket">
+                    <img src="Images/shopping-basket.png">
+                    <span>
+                        <p><strong>My Cart</strong></p>
+                    </span>
+                </div>
+            </a>
+        </div><br>
+        <div>
+        <nav class="navbar navbar-expand-sm bg-success navbar-dark container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="fa fa-home"></i> Home</a>
+            <div id="dropdown_list">
+            
+            <a class="navbar-brand" href="#"><i class="fa fa-list"></i> Categories</a>
+            <div id="drop1">
+                <a href="#">Fruits and Vegetables</a>
+                <a href="#">Food Grains Oils and Masalas</a>
+                <a href="#">Bakery, Cakes and Diaries</a>
+                <a href="#">Beverages</a>
+                <a href="#">Snacks and Branded Foods</a>
+                <a href="#">Beauty and Hygiene</a>
+                <a href="#">Cleaning and Household</a>
+                <a href="#">Kitchen, Garden and Pets</a>
+                <a href="#">Eggs, Meat and Fish</a>
+                <a href="#">Gourment and World Food</a>
+                <a href="#">Baby Care</a>
+                <a href="#">View All</a>
+            </div>
+        </div>
+        <div id="stat">
+        <a class="navbar-brand" href="statistics.html"><i class="fa fa-line-chart"></i> Statistics</a>
+    </div>
+            <ul class="navbar-nav ml-auto">
+          <a class="navbar-brand" href="signup.html"><i class="fa fa-user-plus"></i> Sign Up</a>
+          <a class="navbar-brand" href="login.html"><i class="fa fa-sign-in"></i> Login</a>
+        </ul>
+    </nav>
+</div>
+    </div><br><br>
+    
+
+ <h1 style="text-align: center;margin: 2%;">My cart</h1>
+        
+        <div id="prodN">
+            <p class="rightName">Product Name</p>
+            <p class="leftPrice">Price</p>
+            <p class="rightName"><img src="Images/brand.webp" height="100px" width="100px"></p>
+            <p class="leftPrice">100<p>
+            <p class="rightName"><img src="Images/brand.webp" height="100px" width="100px"></p>
+            <p class="leftPrice">100<p>
+        </div>
+    
+ 
+    <script>
+        function openCity(evt, mop) 
+        {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) 
+            {
+                tabcontent[i].style.display = "none";
+            }
+        
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) 
+            {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+        
+            document.getElementById(mop).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+       
+
+    <div id="footer">
+         <center>
+            <a href="payment.html"><button type="button" class="btn btn-success">Pay Now</button></a>
+        </center>
+    
+        <div id="footer1">
+            <div class="inside_footer1">
+                <span>Freshmart</span>
+                <ul type="none">
+                    <li>About Us</li>
+                    <li>In News</li>
+                    <li>Green Basket</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms and Conditions</li>
+                    <li>Careers At Freshmart</li>
+                    <li>Freshmart Instant</li>
+                    <li>Freshmart Daily</li>
+                </ul>
+            </div>
+            <div class="inside_footer1">
+                <span>Help</span>
+                <ul type="none">
+                    <li>FAQs</li>
+                    <li>Contact Us</li>
+                    <li>Freshmart Wallet FAQs</li>
+                    <li>Freshmart Wallet T&Cs</li>
+                    <li>Vendor Connect</li>
+                    <li>E-Invoice Compliance for Freshmart vendors</li>
+                </ul>
+            </div>
+            <div class="inside_footer1">
+                <span>Download Our App</span>
+                <ul type="none">
+
+                    <img width="50%" src="Images/both.png">
+                </ul>
+            </div>
+            <div class="inside_footer1">
+                <span>Get Social With Us</span>
+                <img width="170vw" src="Images/sociall.png">
+            </div>
+        </div>
+        <hr color="lightgrey">
+        <div id="footer2">
+
+
+            <p><span>POPULAR CATEGORIES:</span>&nbsp &nbsp Sunflower Oils, Wheat Atta, Ghee, Milk, Health Drinks,
+                Flakes, Organic F&V, Namkeen, Eggs, Floor Cleaners, Other Juices, Leafy Vegetables, Frozen Veg Food,
+                Diapers & Wipes</p>
+            <p><span>POPULAR BRANDS:</span>&nbsp &nbsp Fresho, Freshmart Royal, Nandini, Kelloggs, 24 Mantra, Saffola, Lizol,
+                Safal, Horlicks, MTR, Fresho Meats, Whisper , Real, Milky Mist, Nivea, Himalaya, Comfort, Sunpure , Bru
+                , Zespri,</p>
+            <p><span>CITIES WE SERVE:</span>&nbsp &nbsp
+                Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Mysore, Madurai, Coimbatore, Vijayawada-Guntur,
+                Kolkata, Ahmedabad-Gandhinagar, Nashik, Lucknow-Kanpur, Gurgaon, Vadodara, Visakhapatnam, Surat, Nagpur,
+                Patna, Indore, Chandigarh Tricity, Jaipur, Bhopal, Noida-Ghaziabad, Kochi, </p>
+            <p><span>PAYMENT OPTIONS:</span>&nbsp &nbsp
+                <img width="100vw" src="Images/cod.jpg">
+                <img width="100vw" src="Images/visa.png">
+                <img width="100vw" src="Images/mastercard.png">
+                <img width="100vw" src="Images/paytm.png">
+                <img width="100vw" src="Images/mobi.png">
+                <img width="100vw" src="Images/rupay.png">
+                <img width="100vw" src="Images/american.png">
+            </p>
+        </div>
+</div>
+
+    <script>
+
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
+
+
+
